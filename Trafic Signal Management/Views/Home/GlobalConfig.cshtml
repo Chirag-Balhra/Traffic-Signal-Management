@@ -1,0 +1,13 @@
+﻿@model GlobalConfig
+
+@{
+    ViewData["Title"] = "Global Configuration";
+}
+<h1>@ViewData["Title"]</h1>
+<form asp-controller="Home" asp-action="GlobalConfig">
+    <label asp-for="Direction"></label>
+    <select asp-for="Direction" asp-items="Html.GetEnumSelectList<Direction>()">Select Direction</select>
+    <label asp-for="Interval"></label>
+    <input type="text" asp-for="Interval" />
+    <button type="submit">Save/Update</button>
+</form>

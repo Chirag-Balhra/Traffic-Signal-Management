@@ -1,0 +1,53 @@
+﻿@model GlobalConfig
+@section Scripts
+{
+    <script src="@Url.Content("~/js/ConfigScript.js")"></script>
+}
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <div>
+        <label>Time :</label>
+        <div id="time">0</div>
+    </div>
+    <div>
+        <label>Current Open :</label>
+        <div id="cur">A</div>
+    </div>
+    <div>
+        <label>Next Open :</label>
+        <div id="nxt"></div>
+    </div>
+    <div>
+        <label asp-for="Direction"></label>
+        <div id="dir">Clockwise</div>
+    </div>
+    <div>
+        <div>
+            <Button>AA</Button><br />
+            <button>A</button>
+        </div>
+        <div>
+            <div>
+                <Button>AD</Button><br />
+                <button>D</button>
+            </div>
+            <div>
+                <Button>AB</Button><br />
+                <button>B</button>
+            </div>
+
+        </div>
+        <div>
+            <Button>AC</Button><br />
+            <button>C</button>
+        </div>
+    </div>
+    <div>
+        <label>Remaining Time :</label>
+        <div id="rtime"></div>
+    </div>
+</div>
+

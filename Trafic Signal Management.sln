@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trafic Signal Management", "Trafic Signal Management\Trafic Signal Management.csproj", "{6C1A89C4-915C-49AA-BD9B-69BDEC11FF75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C1A89C4-915C-49AA-BD9B-69BDEC11FF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1A89C4-915C-49AA-BD9B-69BDEC11FF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1A89C4-915C-49AA-BD9B-69BDEC11FF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1A89C4-915C-49AA-BD9B-69BDEC11FF75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F96A8F4A-1E41-4583-8334-267DB0D30FFC}
+	EndGlobalSection
+EndGlobal
