@@ -14,13 +14,28 @@ namespace Trafic_Signal_Management.Services
     {
         JwtSecurityTokenHandler _tokenHandler = new JwtSecurityTokenHandler();
         private const string Secret = "db3OIsj+BXE9NZDy0t8W3TcNekrF+2d/1sFnWG4HnV8TZY30iTOdtVWJG8abWvB1GlOgJuQZdcF2Luqm/hccMw==";
-
+        private List<Login> _users = new List<Login>();
+        public ValidationService()
+        {
+            Login user = new Login();
+            user.UserName = "Chirag";
+            user.Password = "Asd123";
+            _users.Add(user);
+        }
 
         public bool Authenticate_User(Login user)
         {
+            
             if(!string.IsNullOrEmpty(user.Password) && !string.IsNullOrEmpty(user.UserName))
             {
-                return true;
+                foreach (Login usr in _users)
+                {
+                    if(user.UserName.ToLower() == usr.UserName.ToLower() && user.Password==usr.Password)
+                    {
+                        return true;
+                    }
+                }
+                
             }
             return false;
         }
